@@ -24,8 +24,8 @@ public final class TheDatabase
 	private TheDatabase() 
 	{
 		mongo = MongoClients.create();
-		database = mongo.getDatabase("Leonardo");
-		collection = database.getCollection("worlds");
+		database = mongo.getDatabase("SWU");
+		collection = database.getCollection("planets");
 		collection.createIndex(Indexes.ascending("name"));
 	}
 	
